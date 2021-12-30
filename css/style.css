@@ -207,3 +207,30 @@ body {
   font-family: 'IMB Plex Mono' monospace;
   font-weight: bold;
 }
+
+/* Responsive mode */
+@media (max-width: 800px) {
+  .header {
+    margin-top: 0px;
+    margin-bottom: 2rem;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  .animals{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 10px;
+    margin-bottom: 3rem;
+  }
+  .animals-image {
+    grid-column: 1;
+  }
+  .faq-list, .map, .data {
+    grid-column: 1/-1;
+  }
+  .footer {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
