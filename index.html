@@ -12,9 +12,9 @@
   <title>Fantastic Animals</title>
 </head>
 <body>
-  <header>
+  <header class="container grid-menu header">
     <nav>
-      <ul>
+      <ul class="header-menu">
         <li><a href="#animals">Animals</a></li>
         <li><a href="#faq">Faq</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -23,11 +23,11 @@
     </nav>
   </header>
 
-  <main>
-    <h1>Fantastic Animals</h1>
+  <main class=" container animals grid" id="animals">
+    <h1 class="title">Fantastic Animals</h1>
 
-    <section>
-      <ul>
+    <section class="col-2 animals-image">
+      <ul class="animals-list">
         <li><img src="img/imagem1.jpg" alt="Fox "></li>
         <li><img src="img/imagem2.jpg" alt="Squirrel"></li>
         <li><img src="img/imagem3.jpg" alt="Bear"></li>
@@ -37,8 +37,8 @@
       </ul>
     </section>
 
-    <section>
-      <div>
+    <section class="col-3 animals-text">
+      <div class="animals-item">
         <h3>Fox</h3>
         <p>Foxes are mammalian and omnivorous animals belonging to the Canidae family. They are medium-sized vulpids, characterized by a long snout and a long, furry tail.</p>
         <p>They also have as a particularity their oval pupils, similar to the vertical pupils of felids.</p>
@@ -46,7 +46,7 @@
         <p>They also have as a particularity their oval pupils, similar to the vertical pupils of felids.</p>
       </div>
 
-      <div>
+      <div class="animals-item">
         <h3>Squirrel</h3>
         <p>Foxes are mammalian and omnivorous animals belonging to the Canidae family. They are medium-sized vulpids, characterized by a long snout and a long, furry tail.</p>
         <p>They also have as a particularity their oval pupils, similar to the vertical pupils of felids.</p>
@@ -54,7 +54,7 @@
         <p>They also have as a particularity their oval pupils, similar to the vertical pupils of felids.</p>
       </div>
 
-      <div>
+      <div class="animals-item">
         <h3>Bear</h3>
         <p>Foxes are mammalian and omnivorous animals belonging to the Canidae family. They are medium-sized vulpids, characterized by a long snout and a long, furry tail.</p>
         <p>They also have as a particularity their oval pupils, similar to the vertical pupils of felids.</p>
@@ -62,7 +62,7 @@
         <p>They also have as a particularity their oval pupils, similar to the vertical pupils of felids.</p>
       </div>
 
-      <div>
+      <div class="animals-item">
         <h3>Wolf</h3>
         <p>Foxes are mammalian and omnivorous animals belonging to the Canidae family. They are medium-sized vulpids, characterized by a long snout and a long, furry tail.</p>
         <p>They also have as a particularity their oval pupils, similar to the vertical pupils of felids.</p>
@@ -70,7 +70,7 @@
         <p>They also have as a particularity their oval pupils, similar to the vertical pupils of felids.</p>
       </div>
 
-      <div>
+      <div class="animals-item">
         <h3>Monkey</h3>
         <p>Foxes are mammalian and omnivorous animals belonging to the Canidae family. They are medium-sized vulpids, characterized by a long snout and a long, furry tail.</p>
         <p>They also have as a particularity their oval pupils, similar to the vertical pupils of felids.</p>
@@ -78,7 +78,7 @@
         <p>They also have as a particularity their oval pupils, similar to the vertical pupils of felids.</p>
       </div>
 
-      <div>
+      <div class="animals-item">
         <h3>Lion</h3>
         <p>Foxes are mammalian and omnivorous animals belonging to the Canidae family. They are medium-sized vulpids, characterized by a long snout and a long, furry tail.</p>
         <p>They also have as a particularity their oval pupils, similar to the vertical pupils of felids.</p>
@@ -88,10 +88,10 @@
     </section>
   </main>
 
-  <section>
-    <h2>Faq</h2>
+  <section class="container grid faq" id="faq">
+    <h2 class="title">Faq</h2>
 
-    <dl>
+    <dl class="faq-list">
       <dt>How old are the animals?</dt>
       <dd>Foxes are mammalian and omnivorous animals belonging to the Canidae family. They are medium-sized vulpids, characterized by a long snout and a long, furry tail.</dd>
 
@@ -106,14 +106,14 @@
     </dl>
   </section>
 
-  <section>
-    <h2>Contact</h2>
+  <section class="container grid contact" id="contact">
+    <h2 class="title">Contact</h2>
 
-    <div>
+    <div class="col-2 map">
       <img src="./img/mapa.png" alt="">
     </div>
 
-    <ul>
+    <ul class="col-3 data">
       <li><a href="mailto:contato@origamid.com">contact@origamid.com</a></li>
       <li><a href="tel:+55219999-9999">+55 (21) 9999-9999</a></li>
       <li>Rua do Conde, nº 21</li>
@@ -121,7 +121,7 @@
     </ul>
   </section>
 
-  <footer>
+  <footer class="container grid-menu footer">
     <p>All rights reserved.</p>
   </footer>
 </body>
