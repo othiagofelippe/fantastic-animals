@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="script.js"></script>
+  <script>document.documentElement.className += ' js'</script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Playfair+Display+SC&display=swap" rel="stylesheet">
   <title>Fantastic Animals</title>
 </head>
+
 <body>
   <header class="container grid-menu header">
-    <nav>
+    <nav class="js-menu">
       <ul class="header-menu">
         <li><a href="#animals">Animals</a></li>
         <li><a href="#faq">Faq</a></li>
@@ -23,11 +24,11 @@
     </nav>
   </header>
 
-  <main class=" container animals grid" id="animals">
+  <main class=" container animals grid js-scroll" id="animals">
     <h1 class="title">Fantastic Animals</h1>
 
     <section class="col-2 animals-image">
-      <ul class="animals-list">
+      <ul class="animals-list js-tabmenu">
         <li><img src="img/imagem1.jpg" alt="Fox "></li>
         <li><img src="img/imagem2.jpg" alt="Squirrel"></li>
         <li><img src="img/imagem3.jpg" alt="Bear"></li>
@@ -37,7 +38,7 @@
       </ul>
     </section>
 
-    <section class="col-3 animals-text">
+    <section class="col-3 animals-text js-tabcontent">
       <div class="animals-item">
         <h3>Fox</h3>
         <p>Foxes are mammalian and omnivorous animals belonging to the Canidae family. They are medium-sized vulpids, characterized by a long snout and a long, furry tail.</p>
@@ -88,10 +89,10 @@
     </section>
   </main>
 
-  <section class="container grid faq" id="faq">
+  <section class="container grid faq js-scroll" id="faq">
     <h2 class="title">Faq</h2>
 
-    <dl class="faq-list">
+    <dl class="faq-list js-accordion">
       <dt>How old are the animals?</dt>
       <dd>Foxes are mammalian and omnivorous animals belonging to the Canidae family. They are medium-sized vulpids, characterized by a long snout and a long, furry tail.</dd>
 
@@ -106,7 +107,7 @@
     </dl>
   </section>
 
-  <section class="container grid contact" id="contact">
+  <section class="container grid contact js-scroll" id="contact">
     <h2 class="title">Contact</h2>
 
     <div class="col-2 map">
@@ -124,5 +125,6 @@
   <footer class="container grid-menu footer">
     <p>All rights reserved.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
