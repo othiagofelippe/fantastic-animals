@@ -14,21 +14,21 @@
 
 <body>
   <header class="container grid-menu header">
-    <nav class="js-menu">
+    <nav data-menu="light">
       <ul class="header-menu">
         <li><a href="#animals">Animals</a></li>
         <li><a href="#faq">Faq</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="https://www.origamid.com/">Dev →</a></li>
+        <li><a data-modal="open" href="https://www.origamid.com/">Dev →</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class=" container animals grid js-scroll" id="animals">
+  <main class=" container animals grid" data-anime="scroll"  id="animals">
     <h1 class="title">Fantastic Animals</h1>
 
     <section class="col-2 animals-image">
-      <ul class="animals-list js-tabmenu">
+      <ul class="animals-list" data-tab="menu">
         <li><img src="img/imagem1.jpg" alt="Fox "></li>
         <li><img src="img/imagem2.jpg" alt="Squirrel"></li>
         <li><img src="img/imagem3.jpg" alt="Bear"></li>
@@ -38,7 +38,7 @@
       </ul>
     </section>
 
-    <section class="col-3 animals-text js-tabcontent">
+    <section class="col-3 animals-text" data-tab='content'>
       <div class="animals-item">
         <h3>Fox</h3>
         <p>Foxes are mammalian and omnivorous animals belonging to the Canidae family. They are medium-sized vulpids, characterized by a long snout and a long, furry tail.</p>
@@ -89,10 +89,10 @@
     </section>
   </main>
 
-  <section class="container grid faq js-scroll" id="faq">
+  <section class="container grid faq" id="faq" data-anime="scroll">
     <h2 class="title">Faq</h2>
 
-    <dl class="faq-list js-accordion">
+    <dl class="faq-list" data-anime="accordion">
       <dt>How old are the animals?</dt>
       <dd>Foxes are mammalian and omnivorous animals belonging to the Canidae family. They are medium-sized vulpids, characterized by a long snout and a long, furry tail.</dd>
 
@@ -107,7 +107,7 @@
     </dl>
   </section>
 
-  <section class="container grid contact js-scroll" id="contact">
+  <section class="container grid contact" data-anime="scroll" id="contact">
     <h2 class="title">Contact</h2>
 
     <div class="col-2 map">
@@ -125,6 +125,19 @@
   <footer class="container grid-menu footer">
     <p>All rights reserved.</p>
   </footer>
-  <script src="script.js"></script>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button class="close" data-modal="close">X</button>
+      <form action="">
+        <label for="email">Email</label>
+        <input type="text" for="email" id="email"><label for="senha">Password</label>
+        <input type="password" for="senha" id="senha">
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </section>
+
+  <script type ="module" src="./js/script.js"></script>
 </body>
 </html>
